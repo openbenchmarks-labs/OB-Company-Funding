@@ -23,9 +23,9 @@ The live board ranks providers on latest funding stage. Providers are scored aga
 
 ## Tools evaluated
 
-15 tools configured in [`tools/`](tools/README.md):
+16 tools configured in [`tools/`](tools/README.md):
 
-`apollo`, `company-enrich`, `crustdata`, `exa`, `explorium`, `fiber`, `firecrawl`, `fundable`, `nimble`, `ocean`, `parallel`, `people-data-labs`, `predictleads`, `seltz`, `zoominfo`
+`apollo`, `company-enrich`, `crustdata`, `exa`, `explorium`, `fiber`, `firecrawl`, `fundable`, `fundingwire`, `nimble`, `ocean`, `parallel`, `people-data-labs`, `predictleads`, `seltz`, `zoominfo`
 
 ## Dataset
 
@@ -39,7 +39,7 @@ See [`data/README.md`](data/README.md) for the file schema.
 
 - [`data/`](data/README.md): Input schema documentation and 4-row public sample (`sample.jsonl`) for offline checks.
 - [`harness/`](harness/README.md): CLI runner (`run`, `grade`, `selftest`, `list-tools`) and one adapter per tool.
-- [`tools/`](tools/README.md): One `<tool>.yaml` config per funding-data provider (15 tools).
+- [`tools/`](tools/README.md): One `<tool>.yaml` config per funding-data provider (16 tools).
 - [`judge/`](judge/README.md): Deterministic field grader, stage alias table (`stage_aliases.json`), and confidence intervals.
 - [`benchmark.yaml`](benchmark.yaml): Benchmark contract, scope, and refresh cadence.
 - [`AGENTS.md`](AGENTS.md): Entry guide for coding agents.

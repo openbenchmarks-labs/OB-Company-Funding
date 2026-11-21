@@ -8,7 +8,7 @@ Quick navigation guide for coding agents working in `OB-Company-Funding`.
 |---|---|---|
 | **`data/`** | Dataset schema & public sample rows | `data/README.md`, `data/sample.jsonl` |
 | **`harness/`** | Execution only: CLI runner, tool registry, tool adapters, HTTP client | `harness/run.py`, `harness/runner.py`, `harness/registry.py`, `harness/adapters/<tool>.py`, `harness/question.py`, `harness/http_client.py`, `harness/llm.py`, `harness/config.yaml` |
-| **`tools/`** | Tool setups, request settings & prices (one file per tool for clean PRs) | `tools/<tool>.yaml` (15 tools, 27 setups) |
+| **`tools/`** | Tool setups, request settings & prices (one file per tool for clean PRs) | `tools/<tool>.yaml` (16 tools, 28 setups) |
 | **`judge/`** | Deterministic grader, rules, board math, stage aliases | `judge/grader.py`, `judge/config.yaml`, `judge/stage_aliases.json` |
 
 Benchmark order & win condition live at the root in `benchmark.yaml`.

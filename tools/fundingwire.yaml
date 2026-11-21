@@ -1,0 +1,18 @@
+tool: fundingwire
+name: FundingWire
+env:
+- FUNDINGWIRE_API_KEY
+setups:
+  fundingwire:
+    class: main
+    endpoint: GET https://oia5pwm9y8.execute-api.us-east-1.amazonaws.com/prod/v1/companies, then GET https://oia5pwm9y8.execute-api.us-east-1.amazonaws.com/prod/v1/funding-rounds
+    settings:
+      seconds_between_requests: 0.5
+      max_workers: 2
+    pricing:
+      usd: null
+      unit: credit
+      source: https://www.fundingwire.ai/developers/api
+      note: Each response reports the credits it charged (billing.credits_charged), and the adapter records their sum
+        per company. An unmatched domain is one call.
+    note: API keys are issued on request by mitchell@fundingwire.ai.
